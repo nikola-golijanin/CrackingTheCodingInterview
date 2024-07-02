@@ -11,7 +11,7 @@
             "preLaunchTask": "build",
             "program": "${workspaceFolder}/CtCi/bin/Debug/net8.0/CtCI.dll",
             "args": [
-                "Chapter01.Q1"
+                "Chapter01.Q2"
             ],
             "cwd": "${workspaceFolder}",
             "stopAtEntry": false,
