@@ -13,6 +13,9 @@ switch (cliArgs[1])
     case "Chapter01.Q3":
         Question03_URLify.Run();
         break;
+    case "Chapter01.Q4":
+        Question04_IsPermutationOfPalindrome.Run();
+        break;
     default:
         Console.WriteLine("");
         break;
