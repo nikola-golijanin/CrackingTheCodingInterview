@@ -19,6 +19,9 @@ switch (cliArgs[1])
     case "Chapter01.Q5":
         Question05_OneAway.Run();
         break;
+    case "Chapter01.Q6":
+        Question06_StringCompression.Run();
+        break;
     default:
         Console.WriteLine("");
         break;
