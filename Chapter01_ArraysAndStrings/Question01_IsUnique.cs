@@ -7,9 +7,9 @@ public class Question01_IsUnique
         string[] words = { "abcde", "hello", "apple", "kite", "padle" };
         foreach (var word in words)
         {
-            Console.WriteLine("Regular v1: " + word + " is unique: " + IsUniqueCharsV1(word));
-            Console.WriteLine("Regular v2: " + word + " is unique: " + IsUniqueCharsV2(word));
-            Console.WriteLine("HashSet: " + word + "is unique: " + IsUniqueCharsWithHashSet(word));
+            Console.WriteLine($"Regular v1: {word} is unique: {IsUniqueCharsV1(word)}");
+            Console.WriteLine($"Regular v2: {word} is unique: {IsUniqueCharsV2(word)}");
+            Console.WriteLine($"HashSet: {word} is unique: {IsUniqueCharsWithHashSet(word)}");
             Console.WriteLine("==================================================");
         }
     }

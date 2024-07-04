@@ -8,9 +8,9 @@ public class Question03_URLify
     {
         var s = "abc d e f";
         var result = URLifyV1(s);
-        Console.WriteLine("URLify " + result);
+        Console.WriteLine($"URLify {result}");
         var result2 = URLifyV2(s);
-        Console.WriteLine("URLify2 " + result2);
+        Console.WriteLine($"URLify2 {result2}");
     }
 
     private static string URLifyV1(string text)
