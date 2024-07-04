@@ -16,6 +16,9 @@ switch (cliArgs[1])
     case "Chapter01.Q4":
         Question04_IsPermutationOfPalindrome.Run();
         break;
+    case "Chapter01.Q5":
+        Question05_OneAway.Run();
+        break;
     default:
         Console.WriteLine("");
         break;
