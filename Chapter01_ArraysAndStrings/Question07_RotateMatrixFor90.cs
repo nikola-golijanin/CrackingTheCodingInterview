@@ -29,6 +29,9 @@ public class Question07_RotateMatrixFor90
 
         var inputMatrix2 = GetInputMatrix();
         RotateFor90MyVersion(inputMatrix2, n);
+
+        var inputMatrix3 = GetInputMatrix();
+        RotateFor90MyVersionUpdated(inputMatrix2, n);
     }
 
     private static void RotateFor90V1(int[,] matrix, int n)
@@ -59,6 +62,19 @@ public class Question07_RotateMatrixFor90
 
         Console.WriteLine("============ RotateFor90V1 ===================");
         PrettyPrintMatrix(matrix);
+    }
+        
+    private static void RotateFor90MyVersionUpdated(int[,] a, int n)
+    {
+        int[,] rotated = new int[n, n];
+
+        for (int i = 0; i < n; i++)
+            for (int j = 0; j < n; j++)
+                rotated[i, j] = a[n - 1 - j, i];
+
+
+        Console.WriteLine("============ RotateFor90MyVersionUpdated =====");
+        PrettyPrintMatrix(rotated);
     }
 
     private static void RotateFor90MyVersion(int[,] a, int n)
