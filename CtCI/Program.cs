@@ -22,6 +22,9 @@ switch (cliArgs[1])
     case "Chapter01.Q6":
         Question06_StringCompression.Run();
         break;
+    case "Chapter01.Q7":
+        Question07_RotateMatrixFor90.Run();
+        break;
     default:
         Console.WriteLine("");
         break;
