@@ -31,7 +31,7 @@ public class Question07_RotateMatrixFor90
         RotateFor90MyVersion(inputMatrix2, n);
 
         var inputMatrix3 = GetInputMatrix();
-        RotateFor90MyVersionUpdated(inputMatrix2, n);
+        RotateFor90MyVersionUpdated(inputMatrix3, n);
     }
 
     private static void RotateFor90V1(int[,] matrix, int n)
