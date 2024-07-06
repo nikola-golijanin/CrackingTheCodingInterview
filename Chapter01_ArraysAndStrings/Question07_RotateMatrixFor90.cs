@@ -1,4 +1,5 @@
 namespace Chapter01_ArraysAndStrings;
+using static MatrixHelpers;
 
 public class Question07_RotateMatrixFor90
 {
@@ -63,7 +64,7 @@ public class Question07_RotateMatrixFor90
         Console.WriteLine("============ RotateFor90V1 ===================");
         PrettyPrintMatrix(matrix);
     }
-        
+
     private static void RotateFor90MyVersionUpdated(int[,] a, int n)
     {
         int[,] rotated = new int[n, n];
@@ -99,18 +100,4 @@ public class Question07_RotateMatrixFor90
         PrettyPrintMatrix(rotated);
     }
 
-    private static void PrettyPrintMatrix(int[,] matrix)
-    {
-        int n = matrix.GetLength(0);
-        for (int i = 0; i < n; i++)
-        {
-            for (int j = 0; j < n; j++)
-            {
-                Console.Write(matrix[i, j].ToString().PadLeft(4));
-            }
-            Console.WriteLine();
-        }
-    }
-
-    private static int[,] GetInputMatrix() => new int[n, n] { { 1, 2, 3, 4 }, { 5, 6, 7, 8 }, { 9, 10, 11, 12 }, { 13, 14, 15, 16 } };
 }
