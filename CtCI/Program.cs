@@ -28,6 +28,9 @@ switch (cliArgs[1])
     case "Chapter01.Q8":
         Question08_ZeroMatrix.Run();
         break;
+    case "Chapter01.Q9":
+        Question09_StringRotation.Run();
+        break;
     default:
         Console.WriteLine("");
         break;
