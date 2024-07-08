@@ -38,6 +38,9 @@ switch (cliArgs[1])
     case "Chapter02.Q2":
         Question02_ReturnKthToLast.Run();
         break;
+    case "Chapter02.Q3":
+        Question03_DeleteMiddleNode.Run();
+        break;
     default:
         Console.WriteLine("");
         break;
