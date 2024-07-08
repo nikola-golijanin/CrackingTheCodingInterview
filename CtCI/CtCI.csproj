@@ -2,6 +2,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Chapter01_ArraysAndStrings\Chapter01_ArraysAndStrings.csproj" />
+    <ProjectReference Include="..\Chapter02_LinkedLists\Chapter02_LinkedLists.csproj" />
   </ItemGroup>
 
   <PropertyGroup>
