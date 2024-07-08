@@ -1,4 +1,5 @@
 ﻿using Chapter01_ArraysAndStrings;
+using Chapter02_LinkedLists;
 
 var cliArgs = Environment.GetCommandLineArgs();
 
@@ -30,6 +31,9 @@ switch (cliArgs[1])
         break;
     case "Chapter01.Q9":
         Question09_StringRotation.Run();
+        break;
+    case "Chapter02.Q1":
+        Question01_RemoveDups.Run();
         break;
     default:
         Console.WriteLine("");
