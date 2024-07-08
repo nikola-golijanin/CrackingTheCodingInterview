@@ -35,6 +35,9 @@ switch (cliArgs[1])
     case "Chapter02.Q1":
         Question01_RemoveDups.Run();
         break;
+    case "Chapter02.Q2":
+        Question02_ReturnKthToLast.Run();
+        break;
     default:
         Console.WriteLine("");
         break;
