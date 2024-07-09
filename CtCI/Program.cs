@@ -47,6 +47,9 @@ switch (cliArgs[1])
     case "Chapter02.Q5":
         Question05_SumLists.Run();
         break;
+    case "Chapter02.Q6":
+        Question06_IsPalindrome.Run();
+        break;
     default:
         Console.WriteLine("");
         break;
