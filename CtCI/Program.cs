@@ -44,6 +44,9 @@ switch (cliArgs[1])
     case "Chapter02.Q4":
         Question04_Partition.Run();
         break;
+    case "Chapter02.Q5":
+        Question05_SumLists.Run();
+        break;
     default:
         Console.WriteLine("");
         break;
