@@ -31,7 +31,7 @@ public class Question06_IsPalindrome
         Console.WriteLine(head.PrintForward());
         Console.WriteLine($"Is Palindrome: {IsPalindromeV1(head)}");
         Console.WriteLine($"Is Palindrome V2: {IsPalindromeV2(head)}");
-
+        Console.WriteLine($"Is Palindrome V3: {IsPalindromeV3(head)}");
     }
 
     private static bool IsPalindromeV1(LinkedListNode head)
@@ -87,5 +87,40 @@ public class Question06_IsPalindrome
             head = head.Next;
         }
         return newHead;
+    }
+
+    private static bool IsPalindromeV3(LinkedListNode head)
+    {
+        int len = LengthOfList(head);
+        var (node, result) = IsPalindromeRecurse(head, len);
+
+        return result;
+    }
+
+    private static (LinkedListNode? node, bool result) IsPalindromeRecurse(LinkedListNode head, int length)
+    {
+        if (head == null || length <= 0) return (head, true);
+
+        if (length == 1) return (head.Next, true);
+
+        var (node, result) = IsPalindromeRecurse(head.Next, length - 2);
+
+        if (!result || node == null) return (node, result);
+
+        result = head.Data == node.Data;
+        node = node.Next;
+
+        return (node, result);
+    }
+
+    private static int LengthOfList(LinkedListNode n)
+    {
+        var size = 0;
+        while (n != null)
+        {
+            size++;
+            n = n.Next;
+        }
+        return size;
     }
 }
