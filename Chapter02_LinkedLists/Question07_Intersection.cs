@@ -61,15 +61,15 @@ public class Question07_Intersection
 
     private static (LinkedListNode tail, int size) GetTailAndSize(LinkedListNode node)
     {
-        var len1 = 0;
+        var len = 0;
 
         while (node != null && node.Next != null)
         {
-            len1++;
+            len++;
             node = node.Next;
         }
 
-        return (node!, len1);
+        return (node!, len);
     }
 
     private static LinkedListNode FindIntersectionV2(LinkedListNode list1, LinkedListNode list2)
