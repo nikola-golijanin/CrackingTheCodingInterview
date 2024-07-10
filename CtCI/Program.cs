@@ -50,6 +50,9 @@ switch (cliArgs[1])
     case "Chapter02.Q6":
         Question06_IsPalindrome.Run();
         break;
+    case "Chapter02.Q7":
+        Question07_Intersection.Run();
+        break;    
     default:
         Console.WriteLine("");
         break;

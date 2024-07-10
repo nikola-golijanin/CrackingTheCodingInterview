@@ -17,6 +17,17 @@ public static class LinkedListHelpers
         return root;
     }
 
+    public static LinkedListNode CreateLinkedListFromArray(int[] vals)
+    {
+        LinkedListNode head = new LinkedListNode(vals[0], null!, null!);
+        LinkedListNode current = head;
+        for (int i = 1; i < vals.Length; i++)
+        {
+            current = new LinkedListNode(vals[i], null!, current);
+        }
+        return head;
+    }
+
     public static int RandomInt(int n) => RandomIntNumbers.Next(n);
 
     public static int RandomIntInRange(int min, int max) => RandomInt(max + 1 - min) + min;
