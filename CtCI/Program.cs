@@ -53,6 +53,9 @@ switch (cliArgs[1])
     case "Chapter02.Q7":
         Question07_Intersection.Run();
         break;    
+    case "Chapter02.Q8":
+        Question08_LoopDetection.Run();
+        break;    
     default:
         Console.WriteLine("");
         break;
