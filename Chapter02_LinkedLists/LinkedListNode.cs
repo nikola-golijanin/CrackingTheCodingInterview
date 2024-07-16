@@ -14,6 +14,11 @@ public class LinkedListNode
         SetPrevious(p);
     }
 
+    public LinkedListNode()
+    {
+
+    }
+
     public void SetNext(LinkedListNode n)
     {
         Next = n;
@@ -57,5 +62,10 @@ public class LinkedListNode
         }
         LinkedListNode head2 = new LinkedListNode(Data, next2, null!);
         return head2;
+    }
+
+    public static LinkedListNode Empty()
+    {
+        return new LinkedListNode();
     }
 }
