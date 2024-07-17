@@ -2,7 +2,7 @@
 
 namespace Chapter04_TreesAndGraphs;
 
-public class Qeustion04_CheckBalanced
+public class Question04_CheckBalanced
 {
     public static void Run()
     {

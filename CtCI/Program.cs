@@ -68,7 +68,7 @@ switch (cliArgs[1])
         Question03_ListOfDepths.Run();
         break;
     case "Chapter04.Q4":
-        Qeustion04_CheckBalanced.Run();
+        Question04_CheckBalanced.Run();
         break;
     default:
         Console.WriteLine("");
