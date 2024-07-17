@@ -42,8 +42,8 @@ public class Question01_RouteBetweenNodes
         if (start == end) return true;
 
         var queue = new Queue<Node>();
-        foreach (var node in graph.Nodes)
-        {
+        foreach (var node in graph.Nodes)   
+        {   
             node.State = State.Unvisited;
         }
 

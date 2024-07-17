@@ -1,5 +1,6 @@
 ﻿using Chapter01_ArraysAndStrings;
 using Chapter02_LinkedLists;
+using Chapter04_TreesAndGraphs;
 using Chapter04_TreesAndGraphs.Question01_RouteBetweenNodes;
 
 var cliArgs = Environment.GetCommandLineArgs();
@@ -59,6 +60,9 @@ switch (cliArgs[1])
         break;
     case "Chapter04.Q1":
         Question01_RouteBetweenNodes.Run();
+        break;
+    case "Chapter04.Q2":
+        Question02_MinimalTree.Run();
         break;
     default:
         Console.WriteLine("");
