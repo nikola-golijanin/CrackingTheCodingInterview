@@ -64,6 +64,9 @@ switch (cliArgs[1])
     case "Chapter04.Q2":
         Question02_MinimalTree.Run();
         break;
+    case "Chapter04.Q3":
+        Question03_ListOfDepths.Run();
+        break;
     default:
         Console.WriteLine("");
         break;
