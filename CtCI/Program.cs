@@ -1,5 +1,6 @@
 ﻿using Chapter01_ArraysAndStrings;
 using Chapter02_LinkedLists;
+using Chapter04_TreesAndGraphs.Question01_RouteBetweenNodes;
 
 var cliArgs = Environment.GetCommandLineArgs();
 
@@ -52,10 +53,13 @@ switch (cliArgs[1])
         break;
     case "Chapter02.Q7":
         Question07_Intersection.Run();
-        break;    
+        break;
     case "Chapter02.Q8":
         Question08_LoopDetection.Run();
-        break;    
+        break;
+    case "Chapter04.Q1":
+        Question01_RouteBetweenNodes.Run();
+        break;
     default:
         Console.WriteLine("");
         break;
