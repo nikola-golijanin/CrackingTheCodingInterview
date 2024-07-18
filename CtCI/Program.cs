@@ -73,6 +73,9 @@ switch (cliArgs[1])
     case "Chapter04.Q5":
         Question05_ValidateBST.Run();
         break;
+    case "Chapter04.Q6":
+        Question06_Successor.Run();
+        break;
     default:
         Console.WriteLine("");
         break;
