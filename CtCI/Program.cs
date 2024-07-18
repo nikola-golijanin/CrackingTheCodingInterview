@@ -70,6 +70,9 @@ switch (cliArgs[1])
     case "Chapter04.Q4":
         Question04_CheckBalanced.Run();
         break;
+    case "Chapter04.Q5":
+        Question05_ValidateBST.Run();
+        break;
     default:
         Console.WriteLine("");
         break;
